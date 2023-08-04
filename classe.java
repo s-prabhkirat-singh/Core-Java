@@ -4,6 +4,19 @@ class Car {
         private String Driver;
         private int speed;
         
+        public Car(String Door, String Engine, String Driver, int speed)
+        {
+            this.Door=Door;
+            this.Engine=Engine;
+            this.speed=speed;
+            this.Driver=Driver; 
+        }
+        Car(){
+            System.out.println("Constructor with no argumenmts called");
+        }
+
+
+
         public void setspeed(int speed) {
             this.speed = speed;
         }
@@ -53,7 +66,12 @@ public class classe {
         car.setEngine("on");
         car.setDriver("seated");
         // System.out.println(car.getSpeed());
+
+        // Calling of parameterized constructor
+        Car  y= new Car("closed","on","seated",20);
+
         System.out.println(car.run());
+        System.out.println(y.run());
 
 
     }
