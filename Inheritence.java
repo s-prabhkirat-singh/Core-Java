@@ -33,10 +33,10 @@ class car extends vehicle{
         
 
     }
-    @Override
-      void run(){
-        System.out.println("running car");
-    }
+    // @Override
+    //   void run(){
+    //     System.out.println("running car");
+    // }
     }
 
 
